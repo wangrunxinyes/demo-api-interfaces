@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date 1/11/2023 11:50
  */
 @FeignClient(
-        name = "food-service",
-        url = "${wangrunxin.service.food}"
+        name = "food-seata-service",
+        url = "${wangrunxin.service.food-seata}"
 )
-public interface FoodService {
+public interface FoodSeataService {
     public final static String GetFoodByID = "/food-service/get-by-id";
     public final static String UpdateFood = "/food-service/update";
     public final static String SaveFood = "/food-service/save";
