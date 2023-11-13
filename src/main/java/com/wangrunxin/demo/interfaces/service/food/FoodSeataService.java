@@ -26,5 +26,5 @@ public interface FoodSeataService {
     public Object updateFood() throws Exception;
 
     @PostMapping(SaveFood)
-    public void save();
+    public void save(@RequestParam String suffix);
 }
